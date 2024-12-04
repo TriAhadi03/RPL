@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik dan Saran Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kritik dan Saran Mahasiswa</h1>
+        <p>Berikan kritik dan saran untuk dosen demi meningkatkan kualitas pembelajaran.</p>
+    </header>
+    <main>
+        <form id="feedback-form">
+            <!-- Memasukan Nama Dan Nim -->
+            <div class="form-step active">
+                <label for="name">Nama Mahasiswa:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" placeholder="Masukkan NIM Anda" required>
+
+                <button type="button" class="next">Selanjutnya</button>
+            </div>
+
+            <!-- Langkah 2: Jurusan dan Kelas -->
+            <div class="form-step">
+                <label for="jurusan">Jurusan:</label>
+                <select id="jurusan" name="jurusan" required>
+                    <option value="" disabled selected>Pilih jurusan Anda</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Manajemen Informatika">Manajemen Informatika</option>
+                </select>
+
+                <label for="kelas">Kelas:</label>
+                <select id="kelas" name="kelas" required>
+                    <option value="" disabled selected>Pilih kelas Anda</option>
+                    <option value="A">Kelas 1 A</option>
+                    <option value="B">Kelas 1 B</option>
+                    <option value="C">Kelas 2 C</option>
+                    <option value="A">Kelas 3 A</option>
+                    <option value="B">Kelas 3 B</option>
+                    <option value="C">Kelas 3 C</option>
+                </select>
+
+                <button type="button" class="next">Selanjutnya</button>
+            </div>
+
+            <!-- Langkah 3: Nama Dosen dan Mata Kuliah -->
+            <div class="form-step">
+                <label for="lecturer">Nama Dosen:</label>
+                <select id="lecturer" name="lecturer" required>
+                    <option value="" disabled selected>Pilih nama dosen</option>
+                    <option value="Dr. Andi Saputra">Dr. Andi Saputra</option>
+                    <option value="Prof. Budi Raharjo">Prof. Budi Raharjo</option>
+                    <option value="Dr. Citra Dewi">Dr. Citra Dewi</option>
+                    <option value="Prof Dani Siregar">Prof Dani Siregar</option>
+                    <option value="Hj. Nuraiman">Hj. Nuraiman</option>
+                    <option value="Dr. Endang Suhendar">Dr. Endang Suhendar</option>
+                </select>
+
+                <label for="subject">Mata Kuliah:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Pilih mata kuliah</option>
+                    <option value="Pemrograman Web">Pemrograman Web</option>
+                    <option value="Struktur Data">Struktur Data</option>
+                    <option value="Basis Data">Basis Data</option>
+                    <option value="Kecerdasan Buatan">Agama Islam</option>
+                    <option value="Bahasa Arab">Bahasa Arab</option>
+                    <option value="Pancasila">Pancasila</option>
+                    <option value="Logika Matematika">Logika Matematika</option>
+                    <option value="Bahasa Inggris">Bahasa Inggris</option>
+                </select>
+
+                <button type="button" class="next">Selanjutnya</button>
+            </div>
+
+            <!-- Langkah 4: Kritik dan Saran -->
+            <div class="form-step">
+                <label for="feedback">Kritik dan Saran:</label>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Tuliskan kritik dan saran Anda" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kampus Kita. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
